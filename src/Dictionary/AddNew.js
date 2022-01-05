@@ -18,9 +18,9 @@ export default function AddNew({ updateDict, userId, tables, categories }) {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
               id: userId,
-              word: word,
-              transcription: transcription,
-              translation: translation,
+              word: word.trim(),
+              transcription: transcription.trim(),
+              translation: translation.trim(),
               category: category,
               tableName: tableName
             })

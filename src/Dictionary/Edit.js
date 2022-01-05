@@ -23,9 +23,9 @@ export default function Edit({ location, userDict, userId, updateDict, tables, c
             body: JSON.stringify({
               id: userId,
               wid: selectedWord.id,
-              word: word,
-              transcription: transcription,
-              translation: translation,
+              word: word.trim(),
+              transcription: transcription.trim(),
+              translation: translation.trim(),
               category: category,
               tableName: tableName
             })
