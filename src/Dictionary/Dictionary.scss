@@ -1,0 +1,88 @@
+@import "src/vars";
+@import "src/table";
+
+.cancel {
+    background: crimson;
+    margin-left: 10px;
+} 
+
+.cancel:hover {
+    background: rgb(156, 15, 43);
+} 
+
+
+.cancel2 {
+    background: $btn-color2;
+    margin-left: 10px;
+
+    &:hover {
+        background: #7f47a0;
+    }  
+}  
+
+td a .material-icons {
+    font-size: 18px;
+    color: $btn-color2;
+}
+
+.filter {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // margin: 5px;
+    padding: 10px;
+
+    .selector {
+        font-family: $font;
+        color: #444;
+
+        span {
+            margin-left: 5px;
+        }
+
+        select {
+            // border: 1px solid #ddd;
+            // border-radius: 5px;
+            font-family: $font;
+
+            
+        }
+    }
+
+    .manager {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+
+        span i {
+            padding: 5px;
+        }
+    }
+}
+
+.link-holder {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    justify-content: right;
+
+    a {
+        margin: 0;
+    }
+}
+
+.data-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+
+    p {
+        padding: 5px;
+        margin: 0;
+    }
+}

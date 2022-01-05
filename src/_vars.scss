@@ -1,0 +1,11 @@
+$base-color: olivedrab;
+$btn-color1: rgb(72, 141, 197);
+$white-clr: rgb(245, 245, 245);
+$btn-color2: #a26fc0;
+$font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
+
+@function darker-color($color) {
+    @return $color - rgb(21,21,21)
+}

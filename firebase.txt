@@ -1,0 +1,6 @@
+firebase routing - https://www.youtube.com/watch?v=PKwu15ldZ7k
+https://github.com/WebDevSimplified/React-Firebase-Auth/blob/master/src/contexts/AuthContext.js
+firebase google drive clone - https://www.youtube.com/watch?v=6XTRElVAZ9Y
+firebase crud - https://www.youtube.com/watch?v=pI4438IHBYY
+firebase doc - https://firebase.google.com/docs/database/security/core-syntax?authuser=0
+react router doc - https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/guides/primary-components.md

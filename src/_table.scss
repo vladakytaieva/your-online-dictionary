@@ -1,0 +1,62 @@
+@import "src/vars";
+
+table {
+    width: 70%;
+    margin: 10px;
+    margin-top: 0;
+    border-collapse: collapse;
+    table-layout: auto;
+    height: fit-content;
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+
+    @media screen and (max-width: 480px) {
+        padding: 0.3em;
+    }
+}
+
+th {
+    color:  $white-clr;
+    background-color: $base-color;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+.scroll {
+    height: 550px; 
+    overflow-y: scroll;
+    width: 100%;
+    font-size: 20px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    // scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+      }
+
+    @media screen and (max-width: 480px) {
+        heigth: 50%;
+        // width: 80%;
+        margin: 0;
+    }
+}
+

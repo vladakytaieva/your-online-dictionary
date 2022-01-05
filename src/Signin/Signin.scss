@@ -1,0 +1,33 @@
+@import "src/vars";
+
+.form {
+    min-width: 40%;
+    background: $base-color;
+    /* margin-top: 150px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 15px;
+
+    @media screen and (max-width: 480px) {
+        height: 100%;
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    label {
+        color: $white-clr;
+    }
+}
+
+.warning {
+    color: rgb(156, 15, 43);
+    padding: 0;
+    margin: 0;
+}
