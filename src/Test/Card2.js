@@ -60,7 +60,7 @@ export default function Card({ word, correct, updateResult}) {
                         return <button key={idx} id={idx} onClick={pickLetter} className="btn submit margin">{el}</button>
                     })
                     }
-                    <button className="btn submit cancel2" onClick={returnLetter}>↩</button>
+                    <button className="btn submit cancel2" onClick={returnLetter}>&#x21A9;&#xFE0E;</button>
                 </div>
             </div>
         </>

@@ -50,6 +50,10 @@ body {
   margin-bottom: 15px;
   margin-top: 10px;
 
+  :focus {
+    outline: none;
+  }
+
   @media screen and (max-width: 650px) {
     padding: 10px 20px;
   }
