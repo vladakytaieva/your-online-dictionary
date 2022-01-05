@@ -10,6 +10,7 @@ import Register from "./Signin/Register";
 import Playground from './Test/Playground'
 import Edit from "./Dictionary/Edit";
 import ManageTables from "./Dictionary/ManageTables";
+import Settings from "./Settings";
 import { useEffect } from "react/cjs/react.development";
 
 function App() {
@@ -111,7 +112,10 @@ function App() {
           <Test dict={user.dict} filter={filterWords} tables={tables} categories={categories}/>
         </Route>
         <Route exact path="/home">
-          <Home name={user.name} userId={user.id} update={updateUserName} logOut={logOut}/>
+          <Home name={user.name} />
+        </Route>
+        <Route exact path="/manage-account">
+          <Settings name={user.name} userId={user.id} update={updateUserName} logOut={logOut}/>
         </Route>
       </Switch>
     </Router>

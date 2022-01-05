@@ -24,6 +24,12 @@ export default function Navbar({ logOut }) {
                     </Link>
                 </li>
                 <li>
+                    <Link to="/manage-account">
+                        <span className="icon"><i className="material-icons">settings</i></span>
+                        <span className="title">Settings</span>
+                    </Link>
+                </li>
+                <li>
                     <Link to="/signin" onClick={logOut}>
                         <span className="icon"><i className="material-icons">login</i></span>
                         <span className="title">Log Out</span>

@@ -51,7 +51,7 @@ export default function ManageTables ({ tables, categories, userId, catSetter, t
                 <p>Your categories:</p>
                 <p>{categoriesList}</p>
                 <form onSubmit={handleSubmit} name="categories">
-                    <input type="text" name="newCategory" id="newCategory" className="inp" value={newCategory} onChange={(e) => setNewCategory(e.target.value)} placeholder="Enter groups or categories of the words (e.g. animals, paople, activity)"/>
+                    <input type="text" name="newCategory" id="newCategory" className="inp" value={newCategory} onChange={(e) => setNewCategory(e.target.value)} placeholder="Enter groups or categories of the words (e.g. animals, people, activity)"/>
                     <button className="btn submit" onClick={() => setLink('manage')}>Add</button>
                     <button className="btn submit cancel" onClick={() => setLink('delete-data')}>Delete</button>
                 </form>
