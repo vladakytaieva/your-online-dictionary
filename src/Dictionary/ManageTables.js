@@ -42,7 +42,7 @@ export default function ManageTables ({ tables, categories, userId, catSetter, t
                 <p>Your tables:</p>
                 <p>{tablesList}</p>
                 <form onSubmit={handleSubmit} name="tables">
-                    <input type="text" name="newTable" id="newTable" className="inp" value={newTable} onChange={(e) => setNewTable(e.target.value)}/>
+                    <input type="text" name="newTable" id="newTable" className="inp" value={newTable} onChange={(e) => setNewTable(e.target.value)} placeholder="Enter language you want to learn (e.g. english, german, etc)"/>
                     <button className="btn submit" onClick={() => setLink('manage')}>Add</button>
                     <button className="btn submit cancel" onClick={() => setLink('delete-data')}>Delete</button>
                 </form>
@@ -51,7 +51,7 @@ export default function ManageTables ({ tables, categories, userId, catSetter, t
                 <p>Your categories:</p>
                 <p>{categoriesList}</p>
                 <form onSubmit={handleSubmit} name="categories">
-                    <input type="text" name="newCategory" id="newCategory" className="inp" value={newCategory} onChange={(e) => setNewCategory(e.target.value)}/>
+                    <input type="text" name="newCategory" id="newCategory" className="inp" value={newCategory} onChange={(e) => setNewCategory(e.target.value)} placeholder="Enter groups or categories of the words (e.g. animals, paople, activity)"/>
                     <button className="btn submit" onClick={() => setLink('manage')}>Add</button>
                     <button className="btn submit cancel" onClick={() => setLink('delete-data')}>Delete</button>
                 </form>
